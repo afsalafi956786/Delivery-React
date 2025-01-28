@@ -62,6 +62,50 @@
   top:-5px
 }
 
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   background-color: #fff2ef;
+   padding: 12px 20px;
+   list-style: none;
+   border-radius: 4PX;
+   border: 1px solid tomato;
+   outline: 2px solid white;
+
+}
+
+.nav-profile-dropdown img{
+    width: 20px;
+}
+
+
+
+.nav-profile-dropdown li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
+
+
+
+
 
 @media (max-width :1050px) {
     .navbar .logo{
